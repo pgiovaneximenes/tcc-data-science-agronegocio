@@ -19,17 +19,28 @@ considerando os exercícios de 2023 e 2024.
 O projeto está organizado em duas etapas principais, em conformidade com a metodologia descrita no TCC:
 
 1. **Processamento e cálculo dos indicadores financeiros**
-   - Script: `scripts/01_processamento_calculo_indicadores.py`
-   - Responsável pela extração, tratamento, padronização e cálculo dos indicadores financeiros
-     a partir das Demonstrações Financeiras Padronizadas (DFPs) da CVM.
+2. **Análise estatística e visualização dos dados**
+
+## Como executar os scripts
+
+1. **Processamento e cálculo dos indicadores financeiros**
+
+   - Executar o script `scripts/01_processamento_calculo_indicadores.py`.
+   - Este script realiza a extração, o tratamento e o cálculo dos indicadores financeiros a partir
+     das Demonstrações Financeiras Padronizadas (DFPs) da CVM.
+   - Ao final da execução, é gerado o arquivo `indicadores_calculados.csv`, que serve de base para
+     as análises estatísticas subsequentes.
 
 2. **Análise estatística e visualização dos dados**
-   - Script: `scripts/02_analise_estatistica_visualizacao.py`
-   - Contém as análises estatísticas descritivas e inferenciais, incluindo histogramas,
-     boxplots, correlação de Pearson, teste *t* de Student pareado e teste não paramétrico de Wilcoxon,
-     bem como as visualizações gráficas utilizadas no estudo.
 
-Essa estrutura reflete diretamente as etapas metodológicas adotadas no trabalho acadêmico.
+   - Executar o script `scripts/02_analise_estatistica_visualizacao.py`.
+   - Este script utiliza o arquivo `indicadores_calculados.csv` como entrada e realiza as análises
+     estatísticas descritivas e inferenciais, além da geração das visualizações gráficas apresentadas
+     no estudo.
+
+Os scripts foram desenvolvidos para execução no ambiente Google Colab, mas também podem ser executados
+em ambientes Python compatíveis, desde que as dependências indicadas estejam instaladas.
+
 
 ## Ferramentas utilizadas
 
